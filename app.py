@@ -1,4 +1,3 @@
-from fastai.vision.all import *
 import gradio as gr
 
 def greet(name):
