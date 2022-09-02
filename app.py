@@ -1,4 +1,3 @@
-#cell
 from fastai.vision.all import *
 import gradio as gr
 
@@ -33,5 +32,3 @@ ps = list(m.parameters())
 ps[1]
 ps[0].shape
 ps[0]
-
-
