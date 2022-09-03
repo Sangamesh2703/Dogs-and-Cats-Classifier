@@ -1,5 +1,5 @@
-pip install -Uqq fastai
-from fastai.vision.all import *
+from fastai.learner import load_learner
+from PIL import Image
 import gradio as gr
 
 def is_cat(x): return x[0].isupper() 
