@@ -15,14 +15,15 @@ import gradio as gr
 def is_cat(x): return x[0].isupper() 
 
 #cell
+import pathlib
+plt = platform.system()
+if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
+
+#cell
 im = PILImage.create('dog.jpg')
 im.thumbnail((192,192))
 im
 
-#cell
-import pathlib
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
 
 #cell
 #|export
